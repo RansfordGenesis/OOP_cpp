@@ -27,7 +27,6 @@ int main(){
 //integer array
     int arr [6] = {67, 71, 54, 43, 82, 90};
     arr [2] = 75;
-    cout << arr << endl;
     int AppliedElectricity = arr[4];
 
     return 0;
