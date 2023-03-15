@@ -4,7 +4,7 @@ using namespace std;
 int main(){
     cout<<"Hello World"<<endl;
 
-    int year = 17785;
+    int number = 17785;
 
     char message[100] = "Welcome to this class!";
     cout << message << endl;
@@ -17,7 +17,18 @@ int main(){
 
     bool obj = true;
 
-    
+//Program that asks for age and responds with year of birth
+    int age, year;
+    cout << "Enter Your Age: " << endl;
+    cin >> age;
+    year = 2023-age;
+    cout << "Your Year of Birth is " << year << endl;
+
+//integer array
+    int arr [6] = {67, 71, 54, 43, 82, 90};
+    arr [2] = 75;
+    cout << arr << endl;
+    int AppliedElectricity = arr[4];
 
     return 0;
 }
