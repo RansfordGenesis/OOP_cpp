@@ -13,5 +13,17 @@ int main(){
 
     cout << "The equivalent in cubic feet is " << equivalent << endl;
 
+
+//Program that coverts degrees Celsius to degrees Fahrenheit.
+
+    float celsius;
+    const float val = 9/5;
+    
+    cout << "Enter celsius to convert: " << endl;
+    cin >> celsius;
+
+    float fahrenheit = (celsius * val) + 32.0;
+    cout << "The equivalent in fahrenheit is: " << fahrenheit << endl; 
+
     return 0;
 }
