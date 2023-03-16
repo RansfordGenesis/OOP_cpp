@@ -17,7 +17,7 @@ int main(){
 //Program that coverts degrees Celsius to degrees Fahrenheit.
 
     float celsius;
-    const float val = 9/5;
+    const float val = 1.8;
     
     cout << "Enter celsius to convert: " << endl;
     cin >> celsius;
