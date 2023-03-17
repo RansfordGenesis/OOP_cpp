@@ -18,7 +18,14 @@ int main(){
     float celsius = (value - 32) * 5/9;
     cout << "The equivalent in Celsius is: " << celsius << endl;
     }
+    else if (option == 2)
+    {
+        cout << "Enter Celsius to convert: " << endl;
+        cin >> value;
 
+    float celsius = (value * 9/5) + 32;
+    cout << "The equivalent in Celsius is: " << celsius << endl;
+    }
 
     return 0;
 }
