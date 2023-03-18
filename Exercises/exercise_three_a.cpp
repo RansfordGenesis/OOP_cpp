@@ -12,7 +12,7 @@ int main()
     cin >> p;
 
     double answer = power(n, p);
-    cout << answer;
+    cout << answer << endl;
 
     return 0;
 }
@@ -20,7 +20,7 @@ double power(double n, int p)
 {
     double final = 1.0;
     for (int i=1; i<=p; i++){
-         final = final * n;
+         final *= n;
     }
     return final;
 }
