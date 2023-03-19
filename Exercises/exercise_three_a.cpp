@@ -10,9 +10,9 @@ int main()
     cin >> n;
     cout << "Enter pow\n";
     cin >> p;
-
+    
     double answer = power(n, p);
-    cout << answer << endl;
+    cout << "The power is " << answer << endl;
 
     return 0;
 }
