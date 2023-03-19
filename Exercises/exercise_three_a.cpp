@@ -1,3 +1,5 @@
+//Function that takes a double and int and perform power on it
+
 #include <iostream>
 using namespace std;
 
