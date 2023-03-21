@@ -1,29 +1,38 @@
 #include <iostream>
 using namespace std;
 
-class smallobj      //define a class
+class smallobj
 {
-private:
-int somedata;       //class data
+    private:
+    int carNumber;
+    int carYears;
+    float cost;
 
-public:
-void setdata(int d)  //member function to set data
-{somedata = d;}
-void showdata()     //member function to display data
-{ cout << "Data is " << somedata << endl; }
+    public:
+    void setdata(int a, int b, float c)
+    {
+        carNumber = a;
+        carYears = b;
+        cost = c;
+    }
+    void showdata()
+    {
+        cout << carNumber << endl;
+        cout << carYears << endl;
+        cout << cost << endl; 
+    }
+
 };
 
 int main()
 {
-    int u;
-    cin >> u;
-smallobj s1, s2, s3;            //define two objects of class smallobj
-s1.setdata(1066);
-s2.setdata(1776);//call member function to set data
-s3.setdata(u);
+    smallobj s1, s2, s3;
+    int a, b;
+    float c;
+    cin >> a >> b >> c;
+    s1.setdata(a, b, c);
 
-s1.showdata();
-s2.showdata();
-s3.showdata();
-return 0;
+    s1.showdata();
+
+    return 0;
 }
