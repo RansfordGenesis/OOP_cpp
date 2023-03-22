@@ -4,20 +4,20 @@ using namespace std;
 class smallobj
 {
     private:
-    int carNumber;
+    int numberPlate;
     int carYears;
     float cost;
 
     public:
     void setdata(int a, int b, float c)
     {
-        carNumber = a;
+        numberPlate = a;
         carYears = b;
         cost = c;
     }
     void showdata()
     {
-        cout << carNumber << endl;
+        cout << numberPlate << endl;
         cout << carYears << endl;
         cout << cost << endl; 
     }
