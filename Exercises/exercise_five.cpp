@@ -1,38 +1,28 @@
 #include <iostream>
 using namespace std;
 
-class smallobj
+class tollbooth
 {
     private:
-    int numberPlate;
-    int carYears;
-    float cost;
-
+    unsigned int total_cars;
+    double total_money;
     public:
-    void setdata(int a, int b, float c)
-    {
-        numberPlate = a;
-        carYears = b;
-        cost = c;
+    tollbooth() : total_cars(0), total_money(0)
+    {}
+    void payingCar(){
+        total_cars += 1;
+        total_money += 0.5;
     }
-    void showdata()
-    {
-        cout << numberPlate << endl;
-        cout << carYears << endl;
-        cout << cost << endl; 
+    void nopayCar(){
+        total_cars += 1;
     }
+    void display(){
+        cout << "Total number of cars passes is " << total_cars << endl;
+        cout << "Total money collected is " << total_money << endl;
+    }
+
+
+
+
 
 };
-
-int main()
-{
-    smallobj s1, s2, s3;
-    int a, b;
-    float c;
-    cin >> a >> b >> c;
-    s1.setdata(a, b, c);
-
-    s1.showdata();
-
-    return 0;
-}
