@@ -36,3 +36,7 @@ int main(){
 }
 
 //function to generate the Fibonacci sequence up to a given number.
+int fibonacci(n){
+
+
+}
