@@ -4,8 +4,8 @@
 using namespace std;
 
 int main(){
-    char ope;
-    float num1, num2, option;
+    char ope, option;
+    float num1, num2;
     
     do{
         cout << "Enter first integer, operator and second integer\n";
@@ -14,24 +14,24 @@ int main(){
         switch(ope)
         {
             case '+':
-            cout << num1 + num2 << endl;
+            cout << "The sum of " << num1 << " and " << num2 << " is " << num1 + num2 << endl;
             break;
 
             case '-':
-            cout << num1 - num2 << endl;
+            cout << "The difference of " << num1 << " and " << num2 << " is " << num1 - num2 << endl;
             break;
 
             case '*':
-            cout << num1 * num2 << endl;
+            cout << "The product of " << num1 << " and " << num2 << " is " << num1 * num2 << endl;
             break;
 
             case '/':
-            cout << num1 / num2 << endl;
+            cout << "The quotient of " << num1 << " and " << num2 << " is " << num1 / num2 << endl;
             break;
         }
         cout << "Do you want to calculate again? y or n \n";
         cin >> option;
-    }while (option == y);
+    }while (option == 'y');
     
     return 0;
 }
