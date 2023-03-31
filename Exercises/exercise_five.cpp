@@ -18,7 +18,7 @@ class tollbooth
         total_cars += 1;
     }
     void display() const{
-        cout << "Total number of cars passes is " << total_cars << endl;
+        cout << "Total number of cars passed is " << total_cars << endl;
         cout << "Total money collected is " << total_money << endl;
     }
 
