@@ -5,12 +5,11 @@ using namespace std;
 int main()
 {
     int age[4];
-    for(int j=0; j<4; j++)
-    {
-        cout << “Enter an age: “;
+    for(int j = 0; j<4; j++){
+        cout << "Input an age: ";
         cin >> age[j];
     }
-    for(j=0; j<4; j++)
-        cout << “You entered “ << age[j] << endl;
-return 0;
+    for(int j = 0; j<4; j++)    cout << "Age entered: " << age[j] << endl;
+
+    return 0;
 }
