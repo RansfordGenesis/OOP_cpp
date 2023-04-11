@@ -70,6 +70,12 @@ int main() {
     }
   } while ( n < array_size);
  
+  int iter = 0;
+
+  while (iter != objects_created) {
+    PolygonContainer[iter]->printArea();
+    ++iter;
+  }
  
   return 0;
 }
